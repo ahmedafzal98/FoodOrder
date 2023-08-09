@@ -19,8 +19,8 @@ const Overlay = (props) => {
 const CartModal = (props) => {
     return (
         <React.Fragment>
-            {ReactDom.createPortal(<Backdrop onHideCart={props.onHideCart} />, document.getElementById('overlay-root'))}
-            {ReactDom.createPortal(<Overlay>{props.children}</Overlay>, document.getElementById('overlay-root'))}
+            {ReactDom.createPortal(<Backdrop onHideCart={props.onHideCart} />, document.getElementById('overlay'))}
+            {ReactDom.createPortal(<Overlay>{props.children}</Overlay>, document.getElementById('overlay'))}
         </React.Fragment>
     );
 }
